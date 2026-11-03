@@ -215,18 +215,18 @@ export function ExperimentProvider({ children }: { children: React.ReactNode }) 
       events: allEvents,
       selected_ids: selectedRef.current,
     };
-    persist({ events: allEvents, submitted: true, completeResult: payload });
-    setSubmitted(true);
-    setCompleteResult(payload);
-    try {
-      await fetch("/api/logs", {
+    const response = await fetch("/api/logs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-    } catch {
-      /* localStorage still has it */
+    if (!response.ok) {
+      const result = await response.json().catch(() => ({}));
+      throw new Error(result.error || "로그 저장에 실패했습니다. 다시 제출해 주세요.");
     }
+    persist({ events: allEvents, submitted: true, completeResult: payload });
+    setSubmitted(true);
+    setCompleteResult(payload);
     return payload;
   }, [ip, meta, persist]);
 
