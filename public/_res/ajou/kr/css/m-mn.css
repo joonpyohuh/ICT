@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.slideMenu{display:none;z-index:100;position:fixed;top:0px;right:-100%;width:100%;height:100%;background-color:#fff;overflow-y:scroll;}
+.dep1 > li > a{display:block;position:relative;padding:18px 0;background:#fff url(../../oia/img/common/btn-m-menu-list-open01.png) no-repeat right 10px center;background-size:14px;font-weight:500;font-size:16px;line-height:24px;color:#000;}
+.dep1 > li > a:after{content:"";position:absolute;bottom:0;right:0;width:100%;height:2px;background-color:#e0e0e0;}
+.dep1 > li > a.selected, .dep1 > li > a.active{color:#03356c;}
+.dep1 > li > a.selected:after, .dep1 > li > a.active:after{background-color:#03356c;}
+.dep1 > li > a.selected{background:#fff url(../../oia/img/common/btn-m-menu-list-close01.png) no-repeat right 10px center;background-size:14px;}
+
+.dep2 {display:none;background:#f0f0f0;}
+.dep2 > li > a {display:block;position:relative;padding:12px 30px 12px 15px;background-color:#f0f0f0;font-weight:500;font-size:15px;line-height:23px;;color:#555555;}
+.dep3 > li > a.selected, .dep1 > li > a.active{color:#2f6cb0;} 
+.dep2 > li > a.has-dep03-open{background:#f0f0f0 url(../../oia/img/common/btn-m-menu-list-open02.png) no-repeat right 15px center;background-size:12px;}
+.dep2 > li > a.has-dep03-close{background:#f0f0f0 url(../../oia/img/common/btn-m-menu-list-close02.png) no-repeat right 15px center;background-size:12px;}
+.dep2 > li > a.selected{background:#f0f0f0 url(../../oia/img/common/btn-m-menu-list-close02.png) no-repeat right 15px center;background-size:12px;color:#03356c;}
+.dep2 > li > a.active{color:#2f6cb0;}
+
+.dep3{display:none;padding:20px 0 0 0;background-color:#073874;}
+.dep3 > li > a{display:block;position:relative;padding:0 0 15px 30px;font-weight:400;font-size:14px;line-height:22px;color:#fff;}
+.dep3 > li > a:before{content:"";display:block;position:absolute;top:11px;left:20px;width:6px;height:1px;background-color:#fff;}
+.dep3 > li > a.active{color:#a5d6ff;}
+
+.set-group{float:right;width:100%;background-color:#fff;color:#000;font-size:17px;}
+.slide-close{display:none;position:absolute;top:26px;left:20px;z-index:100;width:25px;height:25px;background:url(../../oia/img/common/btn-m-menu-close.png) no-repeat 0 0;background-size:100%;}
+.m-gnb-bg{display:none;position:fixed;top:0;left:0;z-index:30;width:100%;height:100%;background-color:rgba(0,0,0,0.8);}
+
+.m-util{padding:20px 0;background:#03356c;}
+.m-util ul{margin:0 auto;max-width:85%;text-align:center;}
+.m-util ul li{display:inline-block;margin:0 10px 0 0;width:calc(25% - 15px);max-width:72px;box-sizing:border-box;}
+.m-util ul li:last-of-type{margin:0;}
+.m-util ul li a{display:block;position:relative;padding:60px 0 0;font-size:14px;line-height:22px;color:#fff;text-align:center;}
+.m-util ul li a:after{content:'';display:block;position:absolute;top:0;left:50%;width:50px;height:50px;border-radius:60px;transform:translateX(-50%);-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);}
+.m-util ul li:nth-of-type(1) a:after{background:#0a4382 url(../img/common/ico-m-util-home.png) no-repeat 50% 50%;background-size:20px;}
+.m-util ul li:nth-of-type(2) a:after{background:#0a4382 url(../img/common/ico-m-util-login.png) no-repeat 50% 50%;background-size:20px;}
+.m-util ul li:nth-of-type(3) a:after{background:#0a4382 url(../img/common/ico-m-util-portal.png) no-repeat 50% 50%;background-size:20px;}
+.m-util ul li:nth-of-type(4) a:after{background:#0a4382 url(../img/common/ico-m-util-fund.png) no-repeat 50% 50%;background-size:25px;}
+.m-util p{margin:15px 0 0;text-align:center;}
+.m-util p a{display:inline-block;padding:7px 20px;background:#fff;font-size:14px;color:#046cc4;font-weight:600;}
+
+.m-lang-box{padding:0 20px 20px;}
+.m-lang-box ul{display:table;width:100%;background:#f0f0f0;border:1px solid #ccc;text-align:center;table-layout:fixed;}
+.m-lang-box ul li{display:table-cell;}
+.m-lang-box ul li a{display:block;padding:12px 10px;border-right:1px solid #ccc;font-size:14px;font-weight:500;box-sizing:border-box;}
+.m-lang-box ul li:last-of-type a{border-right:0;}
+
+@media screen and (max-width: 1024px) {
+	.btn-menu{display:block;float:left;width:63px;height:63px;background:#03356c url(../img/common/btn-menu.png) no-repeat center center;background-size:25px;}
+	.m-gnb{padding:0 20px 15px;width:100%;background-color:#fff;box-sizing:border-box;}
+	.slide-close{left:10px;width:22px;height:22px;}
+}
+
+@media screen and (max-width: 320px) {
+	.m-util ul{max-width:90%;}
+	.m-util ul li{width:calc(25% - 20px);}
+}

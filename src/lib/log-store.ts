@@ -22,7 +22,7 @@ export async function saveLog(log: SessionLog): Promise<void> {
     search_count: log.summary.search_count,
     selected_scholarships: log.selected_ids.map((id) => ({
       id,
-      title: SCHOLARSHIPS.find((post) => post.id === id)?.title ?? id,
+      title: log.selected_scholarships?.find((post) => post.id === id)?.title ?? SCHOLARSHIPS.find((post) => post.id === id)?.title ?? id,
     })),
     raw_events: log.events,
   });

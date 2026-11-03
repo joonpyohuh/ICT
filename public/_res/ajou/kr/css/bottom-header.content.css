@@ -1,0 +1,14 @@
+.gnb-bg {
+	display: none;
+    position: absolute;
+    /* top: 113px; */
+    top: 100%;
+    left: 50%;
+    z-index: 20;
+    width: 100%;
+    max-width: 100%;
+    height: 375px;
+    background: #03356c;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}

@@ -48,6 +48,7 @@ export interface SessionSummary {
 }
 
 export interface SessionLog extends SessionMeta {
+  selected_scholarships?: { id: string; title: string }[];
   ip_address: string;
   submitted_at: string;
   complete_code: string;

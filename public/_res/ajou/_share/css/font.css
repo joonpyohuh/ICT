@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Noto Serif KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../etc/NotoSerifKR-Regular.otf) format('opentype');
+       
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../etc/NotoSerifKR-SemiBold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../etc/NotoSerifKR-Bold.otf) format('opentype');
+}
+
+
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 200;
+  src: url(../etc/NotoSansKR-Light.woff2) format('woff2'),
+       url(../etc/NotoSansKR-Light.woff) format('woff'),
+       url(../etc/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../etc/NotoSansKR-DemiLight.woff2) format('woff2'),
+       url(../etc/NotoSansKR-DemiLight.woff) format('woff'),
+       url(../etc/NotoSansKR-DemiLight.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url(../etc/NotoSansKR-Regular.woff2) format('woff2'),
+        url(../etc/NotoSansKR-Regular.woff) format('woff'),
+        url(../etc/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 500;
+   src: url(../etc/NotoSansKR-Medium.woff2) format('woff2'),
+        url(../etc/NotoSansKR-Medium.woff) format('woff'),
+        url(../etc/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 700;
+   src: url(../etc/NotoSansKR-Bold.woff2) format('woff2'),
+        url(../etc/NotoSansKR-Bold.woff) format('woff'),
+        url(../etc/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../etc/NotoSansKR-Black.woff2) format('woff2'),
+       url(../etc/NotoSansKR-Black.woff) format('woff'),
+       url(../etc/NotoSansKR-Black.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: Light;
+  font-weight: 300;
+  src: 
+       url(../etc/Pretendard-Light.woff2) format('woff2'),
+	  url(../etc/Pretendard-Light.woff) format('woff'),
+     url(../etc/Pretendard-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: Regular;
+  font-weight: 400;
+  src: 
+       url(../etc/Pretendard-Regular.woff2) format('woff2'),
+       url(../etc/Pretendard-Regular.woff) format('woff'),
+		url(../etc/Pretendard-Regular.ttf) format('truetype');
+     
+}
+
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: Medium;
+  font-weight: 500;
+  src: 
+       url(../etc/Pretendard-Medium.woff2) format('woff2'),
+       url(../etc/Pretendard-Medium.woff) format('woff'),
+		url(../etc/Pretendard-Medium.ttf) format('truetype');
+      
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: Bold;
+  font-weight: 700;
+  src: 
+       url(../etc/Pretendard-Bold.woff2) format('woff2'),
+       url(../tc/Pretendard-Bold.woff) format('woff'),
+		url(../etc/Pretendard-Bold.ttf) format('truetype');
+   
+}
+

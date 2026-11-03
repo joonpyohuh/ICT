@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.ajou-table{width:100%;table-layout:fixed;border-top:2px solid #046cc5;}
+.ajou-table table{table-layout:unset;}
+.ajou-table thead th{padding:12px 15px 13px;border-right:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background-color:#f3f3f3;font-weight:400;font-size:17px;color:#000;line-height:24px;text-align:center;letter-spacing:-0.5px;word-wrap:break-word;}
+.ajou-table thead th.th-left{text-align:left !important;}
+.ajou-table thead th.no-right{border-right:none !important}
+
+.ajou-table tbody th{padding:12px 15px 13px;border-right:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background-color:#f3f3f3;font-weight:400;font-size:17px;color:#000;line-height:24px;text-align:center;letter-spacing:-0.5px;word-wrap:break-word;}
+.ajou-table tbody th.bo-right{border-right:1px solid #e1e1e1 !important;}
+.ajou-table tbody th.th-left{text-align:left !important;}
+.ajou-table tbody th.no-right{border-right:none !important;}
+.ajou-table tbody td{padding:12px 15px 13px;border-right:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;font-size:17px;color:#333;line-height:24px;word-wrap:break-word;text-align:center;letter-spacing:-0.5px;}
+.ajou-table tbody td.td-left{text-align:left !important;}
+.ajou-table tbody td.no-bottom{border-bottom:none !important;}
+
+.ajou-table thead th.bo-right{border-right:1px solid #e1e1e1 !important;}
+.ajou-table thead th.bo-bottom{border-bottom:1px solid #e1e1e1 !important;}
+.ajou-table tbody td.bo-right{border-right:1px solid #e1e1e1 !important;}
+.ajou-table tbody td.bo-bottom{border-right:1px solid #e1e1e1 !important;}
+.ajou-table tbody td.no-right{border-right:none !important;}
+.ajou-table tbody td.td-bg{background:#f3f3f3;}
+
+.ajou-table tfoot td{padding:12px 10px 13px;border-right:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background-color:#f3f3f3;font-weight:500;font-size:17px;color:#333;line-height:24px;text-align:center;letter-spacing:-0.5px;word-wrap:break-word;}
+.ajou-table tfoot td.no-right{border-right:none !important;}
+
+/* 간접비 계산기 텍스트 우측 정렬 */
+input.calc-input{text-align:right}
+
+/* 아주비전 테이블 줄간격 조정 */
+.ajou-table.vision-table tbody td{padding:8px 15px;}
+
+/* scrollbox */
+.msg-touch-help {display:none;}
+
+@media screen and (max-width:768px) {
+	.ajou-table thead th{padding:7px;font-size:14px;line-height:22px;}
+	.ajou-table tbody th{padding:7px;font-size:14px;line-height:22px;}
+	.ajou-table tbody td{padding:7px;font-size:14px;line-height:22px;}
+	.ajou-table tbody td.td-left{padding-left:7px;}
+	.ajou-table tfoot td{padding:7px;font-size:14px;line-height:22px;}
+
+	.scrollbox .ajou-table{width:800px;}
+	.scrollbox .ajou-table table{width:100%;}
+
+	/* 아주비전 테이블 줄간격 조정 */
+.ajou-table.vision-table tbody td{padding:5px 7px;}
+	
+	/* scrollbox */
+	.scrollbox .ajou-table{width:800px;}
+	.msg-touch-help {display:block;position:absolute;top:50px;left:50%;z-index:10;margin:0 0 0 -35px;width:70px;height:70px;}
+	.msg-touch-help img {width:100%;}
+	.scrollbox {position:relative;width:100%;overflow-x:auto;overflow-y:hidden;}
+}
