@@ -49,32 +49,32 @@ export interface Persona {
 export const PERSONAS: Record<PersonaId, Persona> = {
   A: {
     id: "A",
-    label: "Persona A",
-    year: "2학년",
+    label: "프로필 1",
+    year: "1학년 2학기 재학 중, 2027-1학기 2학년 1학기 진학 예정",
     major: "경영학과",
-    gpa: "3.6",
-    income: "3구간",
+    gpa: "전체 3.25, 직전 학기 11학점 이수",
+    income: "6구간",
     status: "재학생",
-    region: "경기도 수원시",
+    region: "지역 특수 조건 없음",
     extra:
-      "국가장학금 신청함 · 기존 교외장학 미수혜 · 선원 가족 아님 · 북한이탈주민 아님 · 가족돌봄청년 아님",
+      "일반 학생 · 기존 교외장학 미수혜 · 토요일 전일 세미나 및 프로그램 참여 불가",
   },
   B: {
     id: "B",
-    label: "Persona B",
-    year: "3학년",
-    major: "전기공학과",
-    gpa: "2.7",
-    income: "7구간",
+    label: "프로필 2",
+    year: "3학년 1학기 재학 중, 2027-1학기 3학년 2학기 진학 예정",
+    major: "환경안전공학과",
+    gpa: "전체 3.20, 매학기 12학점 이상, 직전 학기 15학점 이수",
+    income: "9구간",
     status: "재학생",
-    region: "경상남도 거창군",
+    region: "지역 특수 조건 없음",
     extra:
-      "국가장학금 신청함 · 엔지니어링·에너지 관련 전공 · 가족돌봄청년 아님 · 북한이탈주민 아님",
+      "일반 학생 · 기존 교외장학 미수혜 · 토요일 종일 외부 프로그램 참여 불가",
   },
 };
 
 export function personaBanner(p: Persona): string {
-  return `${p.year} / ${p.major} / 직전학기 ${p.gpa} / 소득 ${p.income} / ${p.status} / ${p.region}`;
+  return `${p.year} / ${p.major} / ${p.gpa} / 소득 ${p.income} / ${p.status} / ${p.region}`;
 }
 
 const DEPT = "학생지원팀";

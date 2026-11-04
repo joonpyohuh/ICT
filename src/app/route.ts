@@ -14,7 +14,8 @@ export async function GET(request: Request) {
       html = await response.text();
     }
   } else {
-    html = await readFile(path.join(process.cwd(), "public", "ajou.html"), "utf8");
+    const page = query.get("article.offset") === "10" ? "ajou-page2.html" : "ajou.html";
+    html = await readFile(path.join(process.cwd(), "public", page), "utf8");
   }
   return new Response(html.replace("</body>", '<script src="/experiment.js"></script></body>'), {
     headers: { "Content-Type": "text/html; charset=utf-8" },
